@@ -3,7 +3,7 @@
 /*Template overview of all pokemons*/
 function pokemonCardTemplateOverview(pokemonName, number) {
     return /*html*/`
-        <div class="pokemonCard" id="pokemonCard${number}" Event stopPropagation() onclick="showStats(${number})">
+        <div class="pokemonCard" id="pokemonCard${number}" onclick="showStats(${number})">
             <img class="pokemonImage" id="pokemonImage${number}" src="">
             <div>
                 <h2>${pokemonName}</h2>
