@@ -86,6 +86,7 @@ body {
 
 .pokemonCard h2 {
     margin: 8px 0px;
+    font-size: 28px;
 }
 
 .pokemonCard div {
