@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="icon" type="image" href="img/pokeball.png">
+
+    <script src="script.js"></script>
+    <script src="backgroundcolor.js"></script>
+    <script src="templates.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body id="body" onload="render()">
+
+    <div class="topper">
+        <img src="img/pokeball.png">
+        <div>
+            <span class="headline">Pokedex</span>
+            <span class="headline2">First Generation</span>
+        </div>
+        <span class="clickForSearch show450" id="seachBarOpener" onclick="showSearchBar()">&#9660</span>
+        <input type="text" id="inputSearch" class="searchInput hide450 searchBar450" placeholder="search for Pokemon" onkeyup="searchPokemon()">
+    </div>
+    <div id="containerPokemon" class="containerPokemon">
+    </div>
+    <div onclick="closeStats(event)" class="containerStatsPokemon d-none" id="containerStatsPokemon">
+    </div>
+    <div id="loadingScreen" class="loadingScreen">
+        <img src="img/pokeball.png">
+    </div>
+</body>
+
+</html>
