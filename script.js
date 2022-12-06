@@ -134,13 +134,13 @@ async function searchPokemon(){
     if(input == ''){
         showAllPokemon();
     }else{
-        comparePokemonNames()
+        comparePokemonNames(input);
         await showSearchedPokemons();
     }
 }
 
 /*compare names after every char*/
-function comparePokemonNames(){
+function comparePokemonNames(input){
     for(let i = 0; i < namesPokemon.length; i++){
         let name = namesPokemon[i];
         for(let j = 0; j < input.length; j++){
